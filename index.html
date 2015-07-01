@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8" />
+	<title>Copic Colors</title>
+	<link rel="stylesheet" type="text/css" href="css/colors.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script data-main="js/main" src="js/lib/require.js"></script>
+    
+    <script type="text/template" id="color_template">
+        <div class="<%= color_class %> color">
+            <%= color_class %>
+            <span>
+                <br />
+                <%= color_name %>
+                <br />
+                Hex: <%= color_hex %>
+                <br />
+                RGB: <%= color_red %> <%= color_green %> <%= color_blue %>
+            </span>
+        </div>
+    </script>
+	
+</head>
+<body>
+
+    <div id="page">
+        <h1><!--So many freaking colors.--></h1>
+        <div id="color-box"></div>
+        <img id="logo-bottom" src="img/copic-logo.png" alt="Copic">
+    </div>
+    
+</body>
+</html>

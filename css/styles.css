@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #434546;
+    font-family: Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+#page {
+    margin: 5%;
+}
+
+h1 {
+    margin: 0 0 20px 0;
+    font-size: 11.5em;
+    letter-spacing: .02em;
+    color: #E7E2E9;
+}
+
+.color-wrap {
+    display: inline-block;
+    position: relative;
+    width: 225px;
+    height: 225px;
+}
+
+.color {
+    position: absolute;
+    width: 225px;
+    height: 229px;
+    padding-left: 3px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(50, 50, 50, 0.8);
+    text-transform: uppercase;
+    -webkit-transition: width 0.1s, height 0.1s;
+    -moz-transition: width 0.1s, height 0.1s;
+    -ms-transition: width 0.1s, height 0.1s;
+    -o-transition: width 0.1s, height 0.1s;
+    transition: width 0.1s, height 0.1s;
+}
+
+.color span {
+    font-size: 22px/30px;
+    z-index: 2;
+    text-transform: none;
+    letter-spacing: 1px;
+    opacity: 0;
+}
+
+.active span {
+    opacity: 1;
+}
+
+.color:hover {
+    width: 106%;
+    height: 106%;
+    top: -3%;
+    left: -3%;
+    z-index: 1;
+    color: rgba(50, 50, 50, 0.9);
+    -webkit-box-shadow: 10px 16px 2px 2px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow:    10px 16px 2px 2px rgba(50, 50, 50, 0.5);
+    box-shadow:         10px 16px 2px 2px rgba(50, 50, 50, 0.5);
+    font-size: 22px;
+}
+
+#logo-bottom {
+    float: right;
+    margin: 20px 0 60px 0;
+    max-width: 850px;
+}

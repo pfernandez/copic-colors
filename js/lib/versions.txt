@@ -1,0 +1,6 @@
+The names and version numbers of each file in this directory, listed in order of dependency:
+
+jquery-min v.1.10.2
+underscore-min v.1.5.1
+backbone-min v.1.0.0
+require-min v.2.1.8
